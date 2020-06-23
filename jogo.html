@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bola.js"></script>
+    <style>
+        .menu {
+            width: 100px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        .menu div {
+            margin: 10px;
+        }
+        .bola {
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+            border-radius: 25px;
+            position: absolute;
+        }
+        .areajogo {
+            width: 550px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        .jogo {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jogo">
+        <div class="menu">
+            <select name="cidade" onchange="iniciar(this)">
+                <option>Nivel</option>
+                <option>Fácil</option>
+                <option>Medio</option>
+                <option>Dificil</option>
+            </select><br><br>
+            <div id="Baloes_Inteiros">0</div>
+            <div id="baloes_estourados">0</div>
+            <div id="baloes_tela">0</div>
+        </div>
+        <div class="areajogo"></div>
+    </div>
+</body>
+
+</html>
